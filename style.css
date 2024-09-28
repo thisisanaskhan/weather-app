@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.wrapper{
+    width: 100vm;
+    height: 100vh;
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+.tab-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+}
+.tab{
+    cursor: pointer;
+    font-size: 1rem;
+   
+    
+}
+.tab.current-tab{
+    background-color: grey;
+    border-radius: 4px;
+}
+.btn{
+    all: unset;
+    background-color: rgb(50, 50, 126);
+    color: azure;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    
+}
+.sub-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.grant-location-container{
+     display: none; 
+
+}
+.grant-location-container.active{
+    display: flex;
+}
+.grant-location-container img{
+    margin-bottom: 2rem;
+    
+}
+.grant-location-container p:first-of-type{
+   
+}
+.grant-location-container p:last-of-type{
+   margin-top: 1rem;
+   margin-bottom: 2rem;
+}
+
+.loading-container{
+     display: none; 
+}
+.loading-container.active{
+    display: flex;
+}
+.loading-container p{
+    text-transform: uppercase;
+}
+
+
+.user-info-container{
+    display: none;
+}
+
+.user-info-container.active{
+    display: flex;
+
+}
+.name{
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+   
+}
+.name p{
+    font-size: 2rem;;
+    font-weight: 200;
+}
+.name img{
+    width: 30px;
+    height: 30px;
+}
+
+.user-info-container p[data-temp]{
+    font-size:2.75rem ;
+    font-weight: 700;
+}
+.parameter-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.parameter{
+    width: 30%;
+    
+    background-color: grey;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+
+
+}
+.form-container{
+    display: none;
+  
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    margin-bottom: 3rem;
+
+
+}
+.form-container.active{
+    display: flex;
+}
+.form-container input{
+    border-radius: 10px;
+}
+.form-container :-ms-input-placeholder{
+    color: red;
+}
